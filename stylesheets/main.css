@@ -12,21 +12,22 @@ html, body {
 .menu {
   position: fixed;
   z-index: 1;
-  background: white;
+  background: #F2F2F2;
+  padding-top: 60pt;
+  padding-left: 60pt;
+  padding-right: 100pt;
+  height: 100%;
+  /*display: none;*/
 }
 
   .menu .logotype {
     font-size: 24pt;
     font-weight: bold;
-    color: white;
     margin-bottom: 20pt;
   }
 
     .menu .logotype .logotype-line {
-      background: black;
       display: table;
-      padding: 4pt;
-      margin-bottom: 2pt;
     }
 
   .menu .navigation {
@@ -34,10 +35,7 @@ html, body {
   }
 
     .menu .navigation .navigation-header-text {
-      background: black;
-      display: table;
       font-weight: bold;
-      color: white;
       padding: 4pt;
       margin-bottom: 10pt;
     }
@@ -47,15 +45,10 @@ html, body {
       -moz-transition: .1s ease-in-out;
       -o-transition: .1s ease-in-out;
       transition: .1s ease-in-out;
-      border-bottom: 2pt solid rgba(0,0,0,0.2);
     }
 
     .menu .navigation a:hover {
       padding-left: 20pt;
-    }
-
-    .menu .navigation a.current::after {
-      content: " <";
     }
 
     .menu .navigation .top-level-nav {
@@ -68,13 +61,12 @@ html, body {
         .top-level-item a, .sub-level-item a {
           display: table;
           padding: 4pt;
-          margin-bottom: 4pt;
+          margin-bottom: 6pt;
         }
 
         .top-level-item > a {
-          color: white;
+          color: black;
           text-decoration: none;
-          background: black;
         }
 
         .top-level-item .sub-level-nav {
@@ -87,7 +79,6 @@ html, body {
 
         .top-level-item .sub-level-nav .sub-level-item a {
           padding-left: 20pt;
-          background: #ccc;
           color: black;
           text-decoration: none;
         }
@@ -97,6 +88,7 @@ html, body {
         }
 
 .content {
+  margin: 0 auto;
 
 }
 
@@ -109,37 +101,33 @@ html, body {
     }
 
     .content section .section-header {
-      font-size: 72pt;
+      font-size: 36pt;
       background: black;
       display: table;
-      float: right;
-      clear: both;
       color: white;
       padding: 4pt 20pt 4pt 4pt;
-      margin-bottom: 4pt;
+      margin-bottom: 20pt;
     }
 
     .content section .section-subheader {
       font-size: 36pt;
       background: #ccc;
       display: table;
-      float: right;
       color: black;
       padding: 4pt 20pt 4pt 4pt;
       margin-bottom: 4pt;
     }
 
     .content section .quote {
-      max-width: 500pt;
-      line-height: 24pt;
-      float: right;
+      max-width: 100%;
       clear: both;
-      margin-bottom: 4pt;
+      margin-bottom: 20pt;
     }
 
       .content section .quote > * {
         padding: 4pt;
-        background: #EAFAD8;
+        font-size: 30pt;
+        line-height: 42pt;
         display: table;
       }
 
@@ -158,15 +146,14 @@ html, body {
         letter-spacing: 1pt;
         text-transform: uppercase;
         font-style: normal;
-        float: right;
       }
 
     .content section p {
       font-weight: 100;
-      float: right;
       font-style: normal;
       font-size: 18pt;
-      width: 500pt;
+      width: 50%;
+      margin-left: 25%;
       margin-bottom: 4pt;
       padding: 4pt;
       line-height: 24pt;
@@ -185,7 +172,6 @@ html, body {
     .content section .img-container {
       margin-bottom: 40pt;
       margin-top: 40pt;
-      float: right;
       width: 100%;
       position: relative;
     }
@@ -201,7 +187,6 @@ html, body {
 
     .content section img {
       z-index: 1;
-      float: right;
     }
 
     .content section img.full-width {
@@ -210,12 +195,10 @@ html, body {
 
     .content section img.inline {
       width: 500pt;
-      float: right;
     }
 
     .content section img.small {
       width: 200px;
-      clear: both;
     }
 
 
