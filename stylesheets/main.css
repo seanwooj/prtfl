@@ -1,0 +1,240 @@
+html, body {
+  font-family: 'Brandon Grotesque';
+  height: 100%;
+  font-size: 18pt;
+  /*font-style: italic;*/
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.menu {
+  position: fixed;
+  z-index: 1;
+  background: white;
+}
+
+  .menu .logotype {
+    font-size: 24pt;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 20pt;
+  }
+
+    .menu .logotype .logotype-line {
+      background: black;
+      display: table;
+      padding: 4pt;
+      margin-bottom: 2pt;
+    }
+
+  .menu .navigation {
+
+  }
+
+    .menu .navigation .navigation-header-text {
+      background: black;
+      display: table;
+      font-weight: bold;
+      color: white;
+      padding: 4pt;
+      margin-bottom: 10pt;
+    }
+
+    .menu .navigation a {
+      -webkit-transition: .1s ease-in-out;
+      -moz-transition: .1s ease-in-out;
+      -o-transition: .1s ease-in-out;
+      transition: .1s ease-in-out;
+      border-bottom: 2pt solid rgba(0,0,0,0.2);
+    }
+
+    .menu .navigation a:hover {
+      padding-left: 20pt;
+    }
+
+    .menu .navigation a.current::after {
+      content: " <";
+    }
+
+    .menu .navigation .top-level-nav {
+
+    }
+
+      .menu .navigation .top-level-nav .top-level-item {
+      }
+
+        .top-level-item a, .sub-level-item a {
+          display: table;
+          padding: 4pt;
+          margin-bottom: 4pt;
+        }
+
+        .top-level-item > a {
+          color: white;
+          text-decoration: none;
+          background: black;
+        }
+
+        .top-level-item .sub-level-nav {
+          /*margin-left: 20pt;*/
+        }
+
+        .top-level-item .sub-level-nav .sub-level-item {
+
+        }
+
+        .top-level-item .sub-level-nav .sub-level-item a {
+          padding-left: 20pt;
+          background: #ccc;
+          color: black;
+          text-decoration: none;
+        }
+
+        .top-level-item .sub-level-nav .sub-level-item a:hover {
+          padding-left: 40pt;
+        }
+
+.content {
+
+}
+
+  .content section {
+    margin-bottom: 20pt;
+  }
+
+    .content section .section-header, .content section .section-subheader, .content section p {
+      clear: both;
+    }
+
+    .content section .section-header {
+      font-size: 72pt;
+      background: black;
+      display: table;
+      float: right;
+      clear: both;
+      color: white;
+      padding: 4pt 20pt 4pt 4pt;
+      margin-bottom: 4pt;
+    }
+
+    .content section .section-subheader {
+      font-size: 36pt;
+      background: #ccc;
+      display: table;
+      float: right;
+      color: black;
+      padding: 4pt 20pt 4pt 4pt;
+      margin-bottom: 4pt;
+    }
+
+    .content section .quote {
+      max-width: 500pt;
+      line-height: 24pt;
+      float: right;
+      clear: both;
+      margin-bottom: 4pt;
+    }
+
+      .content section .quote > * {
+        padding: 4pt;
+        background: #EAFAD8;
+        display: table;
+      }
+
+      .content section .quote .quote-text {
+      }
+
+      .content section .quote .quote-text::before {
+        content: "“";
+      }
+
+      .content section .quote .quote-text::after {
+        content: "”";
+      }
+
+      .content section .quote .quote-author {
+        letter-spacing: 1pt;
+        text-transform: uppercase;
+        font-style: normal;
+        float: right;
+      }
+
+    .content section p {
+      font-weight: 100;
+      float: right;
+      font-style: normal;
+      font-size: 18pt;
+      width: 500pt;
+      margin-bottom: 4pt;
+      padding: 4pt;
+      line-height: 24pt;
+    }
+
+    .content section.about  p {
+      clear: none;
+    }
+
+      .content section p a {
+        text-decoration: underline;
+        font-weight: bold;
+        color: black;
+      }
+
+    .content section .img-container {
+      margin-bottom: 40pt;
+      margin-top: 40pt;
+      float: right;
+      width: 100%;
+      position: relative;
+    }
+
+      .content section .img-container .img-annotation {
+        background: yellow;
+        padding: 10pt 4pt;
+        padding-right: 20pt;
+        border-bottom: 2pt solid rgba(0,0,0,0.2);
+        position: absolute;
+        bottom: -2pt; right: 0;
+      }
+
+    .content section img {
+      z-index: 1;
+      float: right;
+    }
+
+    .content section img.full-width {
+      width: 100%;
+    }
+
+    .content section img.inline {
+      width: 500pt;
+      float: right;
+    }
+
+    .content section img.small {
+      width: 200px;
+      clear: both;
+    }
+
+
+.content section:before,
+.content section:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.content section:after {
+    clear: both;
+}
+
+
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.content section {
+    *zoom: 1;
+}

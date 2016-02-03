@@ -1,0 +1,71 @@
+section.portfolio .portfolio-masthead {
+  /*position: relative;*/
+  margin-bottom: 40pt;
+}
+
+section.portfolio .portfolio-masthead .masthead-img {
+  width: 100%;
+}
+
+.close-portfolio-item {
+  position: fixed;
+  top: 0; right: 0;
+  background: yellow;
+  color: black;
+  padding: 4pt 10pt;
+  padding-right: 20pt;
+  border-bottom: 2pt solid rgba(0,0,0,0.2);
+  z-index: 4;
+}
+
+section.portfolio {
+  
+}
+
+section.portfolio .portfolio-headers {
+  bottom: 0;
+  position: absolute;
+}
+
+section.portfolio .portfolio-headers > * {
+  clear: left;
+}
+
+section.portfolio .portfolio-header {
+  font-size: 72pt;
+  background: black;
+  display: table;
+  float: right;
+  color: white;
+  padding: 4pt 20pt 4pt 4pt;
+  margin-bottom: 4pt;
+}
+
+section.portfolio .portfolio-subheader {
+  font-size: 36pt;
+  background: #ccc;
+  display: table;
+  float: right;
+  color: black;
+  padding: 4pt 20pt 4pt 4pt;
+  margin-bottom: 4pt;
+}
+
+section.portfolio .tags {
+  float: right;
+  width: 100%;
+}
+
+  section.portfolio .tags .tag {
+    display: inline-block;
+    float: right;
+    background: yellow;
+    padding: 4px;
+    border-bottom: 2pt solid rgba(0,0,0,0.2);
+    margin-left: 4pt;
+    margin-bottom: 4pt;
+  }
+
+  section.portfolio .tags .tag:first-child {
+    padding-right: 20pt;
+  }
